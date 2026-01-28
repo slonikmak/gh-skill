@@ -2,10 +2,10 @@
     "name": "gh-skill",
     "version": "1.0.0",
     "description": "A powerful toolkit for working with GitHub Projects and Issues",
-    "main": "dist/index.js",
+    "main": "gh-api.js",
     "types": "dist/index.d.ts",
     "bin": {
-        "ghs": "dist/cli.js"
+        "ghs": "ghs-cli.js"
     },
     "scripts": {
         "build": "tsc",
