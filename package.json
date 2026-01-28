@@ -1,0 +1,45 @@
+{
+    "name": "gh-skill",
+    "version": "1.0.0",
+    "description": "A powerful toolkit for working with GitHub Projects and Issues",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "bin": {
+        "ghs": "dist/cli.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "dev": "ts-node src/cli.ts",
+        "test": "ts-node test/basic.ts",
+        "prepublishOnly": "npm run build"
+    },
+    "keywords": [
+        "github",
+        "projects",
+        "cli",
+        "graphql",
+        "issues"
+    ],
+    "author": "slonikmak",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/slonikmak/gh-skill.git"
+    },
+    "bugs": {
+        "url": "https://github.com/slonikmak/gh-skill/issues"
+    },
+    "homepage": "https://github.com/slonikmak/gh-skill#readme",
+    "dependencies": {
+        "@octokit/auth-app": "^8.1.2",
+        "@octokit/core": "^7.0.6",
+        "@octokit/graphql": "^9.0.3",
+        "commander": "^14.0.2",
+        "dotenv": "^17.2.3"
+    },
+    "devDependencies": {
+        "@types/node": "^25.0.10",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3"
+    }
+}
